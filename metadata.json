@@ -1,0 +1,6 @@
+{
+  "name": "Buddy AI",
+  "description": "Accessible AI-powered educational companion, scam detection, and digital assistance platform for elderly users in India.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+:root {
+  font-family: 'Plus Jakarta Sans', 'Yantramanav', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-scale: 1rem;
+}
+
+html.font-normal {
+  font-size: 16px;
+}
+
+html.font-large {
+  font-size: 19px;
+}
+
+html.font-xlarge {
+  font-size: 22px;
+}
+
+/* High Contrast Mode for Low Vision / Elderly Visibility */
+html.high-contrast-mode {
+  filter: contrast(115%);
+}
+
+html.high-contrast-mode body {
+  background-color: #0b0f19 !important;
+  color: #ffffff !important;
+}
+
+html.high-contrast-mode .bg-white {
+  background-color: #141b2d !important;
+  color: #ffffff !important;
+  border-color: #f59e0b !important;
+}
+
+html.high-contrast-mode .bg-amber-50,
+html.high-contrast-mode .bg-slate-50,
+html.high-contrast-mode .bg-orange-50 {
+  background-color: #1a2238 !important;
+  color: #ffffff !important;
+}
+
+html.high-contrast-mode .text-slate-600,
+html.high-contrast-mode .text-slate-500,
+html.high-contrast-mode .text-gray-500,
+html.high-contrast-mode .text-gray-600 {
+  color: #e2e8f0 !important;
+}
+
+/* Accessibility: Touch target enhancement for seniors */
+button, a, input, select, textarea {
+  touch-action: manipulation;
+}
+
+/* Clear focus outlines for keyboard navigation & seniors */
+:focus-visible {
+  outline: 3px solid #f59e0b;
+  outline-offset: 3px;
+}
+
+/* Smooth transitions */
+* {
+  box-sizing: border-box;
+}
+
+/* Scrollbar accessibility */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
